@@ -8,9 +8,9 @@ namespace dongwangDemo
 {
     static class Program
     {
-        /// <summary>
-        /// 应用程序的主入口点。
-        /// </summary>
+        // <summary>
+        // 应用程序的主入口点。这里是我修改的地方，我要提交到Github
+        // </summary>
         [STAThread]
         static void Main()
         {
