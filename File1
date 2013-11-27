@@ -2,3 +2,18 @@ jdhkjshdkh
 
 sdkjhskjhdk 
 sdkhk
+http://www.cnblogs.com/vamei/archive/2012/09/13/2682778.html
+
+# A Good Example
+class superList(list):
+    def __sub__(self, b):
+        a = self[:]    
+ # 这里，self是supeList的对象。由于superList继承于list，它可以利用和list[:]相同的引用方法来表示整个对象。
+        b = b[:]        
+        while len(b) > 0:
+            element_b = b.pop()
+            if element_b in a:
+                a.remove(element_b)
+        return a
+
+print superList([1,2,3]) - superList([3,4])
